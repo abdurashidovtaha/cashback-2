@@ -24,4 +24,8 @@ for (const purchase of purchases) {
     }
 }
 
+if (cashback > 3000) {
+    cashback = 3000;
+}
+
 console.log(cashback);
