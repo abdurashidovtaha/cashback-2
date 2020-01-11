@@ -1,12 +1,16 @@
+const REGULAR_CATEGORY = 'regular';
+const INCREASED_CATEGORY = 'increased';
+const SPECIAL_CATEGORY = 'special';
+
 const purchases = [{
     sum: 500,
-    category: 'regular',
+    category: REGULAR_CATEGORY,
 }, {
     sum: 7000,
-    category: 'increased',
+    category: INCREASED_CATEGORY,
 }, {
     sum: 8540,
-    category: 'special',
+    category: SPECIAL_CATEGORY,
 }];
 
 let cashback=0;
@@ -15,11 +19,11 @@ const increasedPurchasePercentage = 0.05;
 const specialPurchasePercentage = 0.3;
 
 for (const purchase of purchases) {
-    if (purchase.category === 'regular') {
+    if (purchase.category === REGULAR_CATEGORY) {
         cashback += purchase.sum * regularPurchasePercentage;
-    } else if (purchase.category === 'increased') {
+    } else if (purchase.category === INCREASED_CATEGORY) {
         cashback += purchase.sum * increasedPurchasePercentage;
-    } else if (purchase.category === 'special') {
+    } else if (purchase.category === SPECIAL_CATEGORY) {
         cashback += purchase.sum * specialPurchasePercentage;
     }
 }
