@@ -9,7 +9,7 @@ const purchases = [{
     sum: 7000,
     category: INCREASED_CATEGORY,
 }, {
-    sum: 8540,
+    sum: 7540,
     category: SPECIAL_CATEGORY,
 }];
 
